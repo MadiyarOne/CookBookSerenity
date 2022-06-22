@@ -1,0 +1,52 @@
+{
+  "RootNamespace": "BtsSerinCookBook",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "CookBook.IngredientMeasures",
+          "Identifier": "IngredientMeasures",
+          "Module": "CookBook",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "CookBook.RecipePartIngredientMeasures",
+          "Identifier": "RecipePartIngredientMeasures",
+          "Module": "CookBook",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "CookBook.RecipeParts",
+          "Identifier": "RecipeParts",
+          "Module": "CookBook",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "CookBook.RecipeRecipeParts",
+          "Identifier": "RecipeRecipeParts",
+          "Module": "CookBook",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "CookBook.Recipes",
+          "Identifier": "Recipe",
+          "Module": "CookBook",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "5.2.4.0"
+  }
+}
